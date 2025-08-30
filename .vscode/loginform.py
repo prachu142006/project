@@ -11,19 +11,19 @@ def handle_login():
         messagebox.showerror("Error","Login failed")
 
 root =Tk()
-root.title("LOgin form")
+root.title("LOGIN FORM")
 root.maxsize(400,400)
 
 root.geometry("350x500")
 root.configure(background="#0096DC")
-img = Image.open("flipcart.png")
+img = Image.open("amazon_logo.png")
 resized_img = img.resize((70,70))
 img= ImageTk.PhotoImage(resized_img)
 
 img_label = Label(root,image = img)
 img_label.pack(pady =(10,10))
 
-text_label = Label(root,text="Flipkart" ,fg="white",bg="#0096DC")
+text_label = Label(root,text="Amazon" ,fg="white",bg="#0096DC")
 text_label.pack()
 text_label.config(font=("verdana,24"))
 
